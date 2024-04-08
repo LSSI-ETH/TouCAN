@@ -5,4 +5,3 @@ TouCAN dataset contains the following columns:
 - 'MHC' is MHC allele presenting the epitope;
 - 'species', human or murine TCR indicated by 'Homsap' or 'Musmus';
 - 'TRA_aa', 'TRB_aa', a full amino acid sequence of TRA and TRB domains obtained by Stitchr tool;
-- 'TCR_name', a TCR index to connect it to obtained ESM encoding; 
