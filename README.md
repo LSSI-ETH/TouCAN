@@ -14,22 +14,23 @@ The model can be easily re-trained on a new TCR-antigen dataset using the one-ho
 
 ## Example file is put under the example/example_df.csv
 How to train TouCAN on your own data: 
-TCR input parameters:
---input_type : "beta_chain or paired_chain"
---encoding_type: "onehot or ESM"
---esm_type: "ESM1v or ESM2"
---chain_type: "TCR or ab_VC or ab_V"
+#### TCR input parameters:
+-input_type : "beta_chain or paired_chain"
+-encoding_type: "onehot or ESM"
+-esm_type: "ESM1v or ESM2"
+-chain_type: "TCR or ab_VC or ab_V"
 
- Model parameters
---embedding_space: embedding dimension for TCR (integer)
---epochs: N of epochs to train the model (integer)
---patience: early stopping with patience for N epochs (integer)
---batch_size: specify the batch size
---learning_rate: specify the learning rate
---triplet_loss: "hard or semihard"
+#### Model parameters
+-embedding_space: embedding dimension for TCR (integer)
+-epochs: N of epochs to train the model (integer)
+-patience: early stopping with patience for N epochs (integer)
+-batch_size: specify the batch size
+-learning_rate: specify the learning rate
+-triplet_loss: "hard or semihard"
     
-Visualize TouCAN embeddings 
---plot_embedding: True or False
+#### Visualize TouCAN embeddings 
+-plot_embedding: True or False
 
-Example command: 
+Example command:
+
 python TouCAN.py --input_type paired_chain --encoding_type ESM --esm_type ESM1v --chain_type ab_V --embedding_space 160 --epochs 200 --patience 15 --batch_size 256 --learning_rate 0.0005
