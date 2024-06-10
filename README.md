@@ -13,4 +13,23 @@ Your data should be in the following format to use TouCAN:
 The model can be easily re-trained on a new TCR-antigen dataset using the one-hot encoding of CDR loops. However, TouCAN performs best when trained on ESM-1v encodings of V-domains of TCRɑ and TCRβ chains that need to be obtained independently. Please, follow the instructions of the ESM GitHub page on how to obtain encodings here: https://github.com/facebookresearch/esm . To obtain TCR V-domain sequence from the known CDR3, V and J gene information, you can use Stitchr: https://jamieheather.github.io/stitchr/
 
 ## Example file is put under the example/example_df.csv
-Command: python TouCAN.py -input example/example_df.csv -output example/output
+How to train TouCAN on your own data: 
+TCR input parameters:
+--input_type : "beta_chain or paired_chain"
+--encoding_type: "onehot or ESM"
+--esm_type: "ESM1v or ESM2"
+--chain_type: "TCR or ab_VC or ab_V"
+
+ Model parameters
+--embedding_space: embedding dimension for TCR (integer)
+--epochs: N of epochs to train the model (integer)
+--patience: early stopping with patience for N epochs (integer)
+--batch_size: specify the batch size
+--learning_rate: specify the learning rate
+--triplet_loss: "hard or semihard"
+    
+Visualize TouCAN embeddings 
+--plot_embedding: True or False
+
+Example command: 
+python TouCAN.py --input_type paired_chain --encoding_type ESM --esm_type ESM1v --chain_type ab_V --embedding_space 160 --epochs 200 --patience 15 --batch_size 256 --learning_rate 0.0005
