@@ -42,22 +42,15 @@ model_input_dict = dict(zip(keys, values))
 ########################################################################################################
 ########################################## Open TCRpMHC files #######################################
 
-directory_TCRpMHC = '/Users/pertsevm/Desktop/VAE_triplet_yet_again_final/Scripts/AE_and_triplet/one_hot_on_ESM_dataset/ESM_embeddings/'
-TCRpMHC_ESM2_data = directory_TCRpMHC + 'full_TCRaa_for_ESM2_embeddings_w_Vdomains.csv'
-esm_embed_dir = '/Users/pertsevm/Desktop/VAE_triplet_yet_again_final/Scripts/AE_and_triplet/one_hot_on_ESM_dataset/ESM_embeddings/'
-
-#small dataset
-#TCRpMHC_new_data_90cdhit = directory_TCRpMHC + 'TCRpMHC_data_with_folds_90cdhit.csv'
-
-#big dataset
-#TCRpMHC_new_data_90cdhit_big_beta = directory_TCRpMHC + 'tc_hard_human_beta_90%cdhit_85_1000_TCRs_balanced.csv'
-#TCRpMHC_new_data_95cdhit_big_beta = directory_TCRpMHC + 'tc_hard_human_beta_95%cdhit_85_1000_TCRs_balanced.csv'
+dat_dir= '../datasets/'
+TCRpMHC_ESM2_data = data_dir + 'full_TCRaa_for_ESM2_embeddings_w_Vdomains.csv'
+esm_embed_dir = '../datasets/ESM_embeddings/'
 
 
 ##################################### OUTPUT DIRECTORY ###################################################
 
-triplet_out_model= "/Users/pertsevm/Desktop/VAE_triplet_yet_again_final/Scripts/AE_and_triplet/one_hot_on_ESM_dataset/onehot_triplet_models/"
-triplet_analysis_dir = "/Users/pertsevm/Desktop/VAE_triplet_yet_again_final/Scripts/AE_and_triplet/one_hot_on_ESM_dataset/onehot_triplet_analysis/"
-triplet_analysis_networks = "/Users/pertsevm/Desktop/VAE_triplet_yet_again_final/Scripts/AE_and_triplet/one_hot_on_ESM_dataset/"
+triplet_out_model= "../triplet_models/"
+triplet_analysis_dir = "../triplet_analysis/"
+triplet_analysis_networks = "../triplet_networks/"
 
 ###########################################################################################################
