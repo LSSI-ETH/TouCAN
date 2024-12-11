@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+rm#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jul 28 11:05:31 2022
@@ -51,6 +51,6 @@ esm_embed_dir = '../datasets/ESM_embeddings/'
 
 triplet_out_model= "../trained_models/"
 triplet_analysis_dir = "../performance_analysis/"
-triplet_analysis_networks = "../networks/"
+triplet_analysis_networks = "../performance_analysis/networks/"
 
 ###########################################################################################################
