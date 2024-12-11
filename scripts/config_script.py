@@ -43,7 +43,7 @@ model_input_dict = dict(zip(keys, values))
 ########################################## Open TCRpMHC files #######################################
 
 dat_dir = '../datasets/'
-TCRpMHC_ESM2_data = data_dir + 'full_TCRaa_for_ESM2_embeddings_w_Vdomains.csv'
+TCRpMHC_ESM2_data = data_dir + 'full_TCRaa_data_with_epitope_labels.csv'
 esm_embed_dir = '../datasets/ESM_embeddings/'
 
 
