@@ -49,8 +49,8 @@ esm_embed_dir = '../datasets/ESM_embeddings/'
 
 ##################################### OUTPUT DIRECTORY ###################################################
 
-triplet_out_model= "../triplet_models/"
-triplet_analysis_dir = "../triplet_analysis/"
-triplet_analysis_networks = "../triplet_networks/"
+triplet_out_model= "../trained_models/"
+triplet_analysis_dir = "../performance_analysis/"
+triplet_analysis_networks = "../networks/"
 
 ###########################################################################################################
